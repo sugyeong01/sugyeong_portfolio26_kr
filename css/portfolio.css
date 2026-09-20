@@ -101,6 +101,19 @@ nav button.active{
 
 }
 
+.language_switch {
+    margin-left: 28px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #111;
+    opacity: 0.6;
+    transition: opacity 0.2s ease;
+}
+
+.language_switch:hover {
+    opacity: 1;
+}
+
 /* ========================= */
 
 main{
