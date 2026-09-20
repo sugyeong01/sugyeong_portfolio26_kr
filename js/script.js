@@ -220,7 +220,7 @@ const projects = {
     10: {
         number: "PROJECT 01",
         category: "Award",
-        title: "Yeongnam Univ Eblem & Slogan Design Contest",
+        title: "Yeongnam Univ Emblem & Slogan Design Contest",
         description: "영남대학교 개교 77주년 기념 엠블럼 및 슬로건 디자인 공모전 출품작으로, 엠블럼과 슬로건을 통해 대학의 정체성과 미래에 대한 비전을 시각적으로 표현했습니다.",
         year: "2024",
         role: "Concept Development · Logo Design · Visual Identityn",
