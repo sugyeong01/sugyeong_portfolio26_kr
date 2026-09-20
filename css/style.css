@@ -1,0 +1,344 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:
+    radial-gradient(circle at 20% 30%,#DFF4FF 0%,transparent 35%),
+    radial-gradient(circle at 80% 70%,#F4E5FF 0%,transparent 35%),
+    #ECE8E8;
+
+    background-size:180% 180%;
+
+    animation:bgMove 12s ease infinite;
+
+    font-family:-apple-system,
+    BlinkMacSystemFont,
+    "SF Pro Display",
+    sans-serif;
+
+}
+
+/* ---------------------- */
+
+.airdrop_box{
+
+    width:min(640px,92vw);
+
+    background:#F6F6F7;
+
+    border-radius:28px;
+
+    overflow:hidden;
+
+    box-shadow:
+    0 25px 70px rgba(0,0,0,.12);
+
+    transition:.35s;
+
+}
+
+.airdrop_box:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:
+    0 40px 90px rgba(0,0,0,.15);
+
+}
+
+/* ---------------------- */
+
+.top{
+
+    text-align:center;
+
+    padding:30px;
+
+}
+
+.top h1{
+
+    font-size:52px;
+
+    font-weight:700;
+
+    color:#111;
+
+    margin-bottom:10px;
+
+}
+
+.top p{
+
+    font-size:24px;
+
+    line-height:1.4;
+
+    color:#333;
+
+}
+.mid{
+
+    width:100%;
+    max-width:706px;
+
+    aspect-ratio:706 / 513;
+
+    margin:0 auto;
+
+    overflow:hidden;
+
+}
+
+.mid video{
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    display:block;
+
+}
+
+/* ---------------------- 
+.mid video{
+    width:100%;
+    display:block;
+    object-fit:cover;
+}
+
+.mid img{
+
+    width:100%;
+
+    display:block;
+
+}
+
+/* ---------------------- */
+
+.bot{
+
+    display:flex;
+
+    border-top:1px solid #d8d8d8;
+
+}
+
+.bot button{
+
+    width:50%;
+
+    height:82px;
+
+    border:none;
+
+    font-size:34px;
+
+    
+
+    color:#007AFF;
+
+}
+
+/* ---------------------- */
+
+.decline{
+    background:#fff;
+
+    cursor:default;
+
+    border-right:1px solid #d8d8d8;
+
+}
+
+/* ---------------------- */
+
+.accept{
+
+    position:relative;
+
+    overflow:hidden;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+    transition:.35s;
+
+    background:linear-gradient(
+        135deg,
+        #ffffff,
+        #fffee5,
+        #fbe6ff,
+        #eef7ff,
+        #ffffff
+    );
+
+    background-size:300% 300%;
+
+    animation:flow 5s ease infinite;
+
+}
+
+.accept span{
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+/* Hover */
+
+.accept:hover{
+
+    animation:none;
+
+    background:#007AFF;
+
+    color:white;
+
+}
+
+/* Click */
+
+.accept:active{
+
+    transform:scale(.97);
+
+}
+
+/* ---------------------- */
+
+@keyframes flow{
+
+    0%{
+
+        background-position:0% 50%;
+
+    }
+
+    50%{
+
+        background-position:100% 50%;
+
+    }
+
+    100%{
+
+        background-position:0% 50%;
+
+    }
+
+}
+
+@keyframes bgMove{
+
+    0%{
+        background-position:0% 0%;
+    }
+
+    50%{
+        background-position:100% 100%;
+    }
+
+    100%{
+        background-position:0% 0%;
+    }
+
+}
+
+/* ========================= */
+/* AirDrop Hide Animation */
+
+.airdrop_box{
+
+    transition:
+    opacity .5s ease,
+    transform .5s ease;
+
+}
+
+.airdrop_box.hide{
+
+    opacity:0;
+
+    transform:scale(.94);
+
+}
+/* ========================= */
+
+
+/* ---------------------- */
+
+@media(max-width:768px){
+
+.airdrop_box{
+
+    width:92%;
+
+}
+
+.top{
+
+    padding:22px;
+
+}
+
+.top h1{
+
+    font-size:38px;
+
+}
+
+.top p{
+
+    font-size:18px;
+
+}
+
+.bot button{
+
+    height:64px;
+
+    font-size:24px;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.top h1{
+
+    font-size:30px;
+
+}
+
+.top p{
+
+    font-size:16px;
+
+}
+
+.bot button{
+
+    height:56px;
+
+    font-size:20px;
+
+}
+
+}

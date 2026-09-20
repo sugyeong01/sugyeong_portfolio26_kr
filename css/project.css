@@ -1,0 +1,436 @@
+* {
+
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+
+html {
+
+    scroll-behavior: smooth;
+
+}
+
+
+body {
+
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "SF Pro Display",
+        sans-serif;
+
+    background: #F7F7F5;
+
+    color: #111;
+
+}
+
+
+/* ========================= */
+/* HEADER */
+/* ========================= */
+
+.project_header {
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 100;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 28px 60px;
+
+    background: rgba(247, 247, 245, .85);
+
+    backdrop-filter: blur(18px);
+
+}
+
+
+.back {
+
+    color: #111;
+
+    text-decoration: none;
+
+    font-size: 16px;
+
+    transition: .3s;
+
+}
+
+
+.back:hover {
+
+    color: #007AFF;
+
+}
+
+
+.project_number {
+
+    font-size: 12px;
+
+    letter-spacing: 2px;
+
+    color: #999;
+
+}
+
+
+/* ========================= */
+/* PROJECT PAGE */
+/* ========================= */
+
+.project_page {
+
+    width: min(1400px, 90%);
+
+    margin: 0 auto;
+
+}
+
+
+/* ========================= */
+/* INTRO */
+/* ========================= */
+
+.project_intro {
+
+    display: grid;
+
+    grid-template-columns: 1.4fr .6fr;
+
+    gap: 100px;
+
+    padding: 100px 0;
+
+}
+
+
+.category {
+
+    display: block;
+
+    font-size: 12px;
+
+    letter-spacing: 3px;
+
+    color: #999;
+
+    margin-bottom: 25px;
+
+}
+
+
+.project_title h1 {
+
+    font-size: clamp(48px, 7vw, 90px);
+
+    line-height: 1;
+
+    letter-spacing: -3px;
+
+    font-weight: 600;
+
+    margin-bottom: 30px;
+
+}
+
+
+.project_title>p {
+
+    max-width: 600px;
+
+    font-size: 20px;
+
+    line-height: 1.7;
+
+    color: #666;
+
+}
+
+
+/* ========================= */
+/* PROJECT INFO */
+/* ========================= */
+
+.project_info {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 30px;
+
+    padding-top: 10px;
+
+}
+
+
+.project_info span {
+
+    display: block;
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+
+    color: #999;
+
+    margin-bottom: 7px;
+
+}
+
+
+.project_info p {
+
+    font-size: 15px;
+
+    line-height: 1.5;
+
+}
+
+
+/* ========================= */
+/* CASE STUDY */
+
+
+.case_study {
+
+    width: 100%;
+
+}
+
+
+.case_image {
+
+    width: 100%;
+
+    overflow: hidden;
+
+}
+
+
+.case_image img {
+
+    display: block;
+
+    width: 100%;
+
+    height: auto;
+
+}
+/* ========================= */
+
+.case_study {
+    width: 100%;
+}
+
+.case_media_item {
+    width: 100%;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.case_media_item img,
+.case_media_item video {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+/* ========================= */
+/* NAVIGATION */
+/* ========================= */
+
+.project_navigation {
+
+    padding: 120px 0;
+
+    border-top: 1px solid #E2E2E2;
+
+    margin-top: 80px;
+
+}
+
+
+.project_navigation a {
+
+    text-decoration: none;
+
+    color: #111;
+
+}
+
+
+.project_navigation span {
+
+    font-size: 11px;
+
+    letter-spacing: 3px;
+
+    color: #999;
+
+}
+
+
+.project_navigation h2 {
+
+    margin-top: 15px;
+
+    font-size: 42px;
+
+    font-weight: 500;
+
+    transition: .3s;
+
+}
+
+
+.project_navigation a:hover h2 {
+
+    color: #007AFF;
+
+    transform: translateX(8px);
+
+}
+
+
+/* ========================= */
+/* TABLET */
+/* ========================= */
+
+@media (max-width: 900px) {
+
+    .project_header {
+
+        padding: 22px 30px;
+
+    }
+
+
+    .project_intro {
+
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+
+        padding: 70px 0;
+
+    }
+
+
+    .project_info {
+
+        display: grid;
+
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
+}
+
+/*web link*/
+.project_link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 30px;
+    padding: 14px 22px;
+    border: 1px solid #111;
+    border-radius: 100px;
+    color: #111;
+    background: transparent;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.project_link:hover {
+    background: #111;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+/*web link*/
+
+
+/* ========================= */
+/* MOBILE */
+/* ========================= */
+
+@media (max-width: 600px) {
+
+    .project_page {
+
+        width: 92%;
+
+    }
+
+
+    .project_header {
+
+        padding: 20px;
+
+    }
+
+
+    .project_intro {
+
+        padding: 50px 0;
+
+    }
+
+
+    .project_title h1 {
+
+        font-size: 48px;
+
+        letter-spacing: -2px;
+
+    }
+
+
+    .project_title>p {
+
+        font-size: 17px;
+
+    }
+
+
+    .project_info {
+
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+
+    }
+
+
+    .project_navigation {
+
+        padding: 80px 0;
+
+    }
+
+
+    .project_navigation h2 {
+
+        font-size: 32px;
+
+    }
+
+}
