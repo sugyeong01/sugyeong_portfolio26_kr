@@ -177,7 +177,6 @@ const projects = {
                 type: "image",
                 src: "img/projects/project_brand.jpg"
             },
-        
         ]
     },
 
